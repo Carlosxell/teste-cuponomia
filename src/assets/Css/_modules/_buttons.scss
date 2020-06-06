@@ -1,0 +1,8 @@
+@import '../_utilities/_utilities';
+
+.c-btn {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  padding: pxToRem(4) pxToRem(8);
+}

@@ -1,0 +1,6 @@
+@import '../_utilities/_utilities';
+
+.l-container {
+  margin: pxToRem(32) auto;
+  max-width: pxToRem(768);
+}
