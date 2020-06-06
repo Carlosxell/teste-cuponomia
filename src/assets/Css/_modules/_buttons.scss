@@ -1,8 +1,17 @@
 @import '../_utilities/_utilities';
 
 .c-btn {
-  background: transparent;
+  background: purple;
+  border-radius: pxToRem(6);
   border: none;
-  display: inline-block;
-  padding: pxToRem(4) pxToRem(8);
+  color: $color-white;
+  display: block;
+  padding: pxToRem(8) pxToRem(16);
+  margin: pxToRem(20) auto;
+  max-width: pxToRem(212);
+
+  &:disabled {
+    background-color: rgba(lighten(purple, 6%), .6);
+    cursor: not-allowed;
+  }
 }

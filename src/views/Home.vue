@@ -8,7 +8,7 @@
               type="button">Mostrar usuários</button>
 
       <Table :prop-list="usersList"
-             v-if="!usersList.length" />
+             v-if="usersList.length" />
     </div>
   </div>
 </template>
