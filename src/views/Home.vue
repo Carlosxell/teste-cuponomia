@@ -3,6 +3,7 @@
     <div class="l-container">
 
       <button @click="searchUsers"
+              :disabled="blockBtn"
               class="c-btn"
               type="button">Mostrar usuários</button>
 
@@ -20,13 +21,16 @@
     name: 'Home',
     data: () => {
       return {
-        usersList: []
+        usersList: [],
+        blockBtn: false
       };
     },
     components: { Table },
     methods: {
-      searchUsers() {
-        getUsers().then(res => this.usersList = res);
+      async searchUsers() {
+        await getUsers().then(res => this.usersList = res);
+
+        if(this.usersList.length) { this.blockBtn = true; }
       }
     }
   };

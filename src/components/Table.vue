@@ -33,4 +33,14 @@
 
 <style lang="scss">
   @import '../assets/Css/_utilities/_extends';
+
+  .c-table {
+    &_head {
+      &_tr {}
+    }
+
+    &_body {
+      &_tr {}
+    }
+  }
 </style>
